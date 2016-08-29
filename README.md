@@ -79,3 +79,4 @@ nginx             | latest           | 5c4cd3974539       | 30 minutes ago      
 tomcat            | latest           | af9a430de56b       | About an hour ago   | 775.7 MB
 sbeliakou/centos  | 6.7              | 600797452381       | 3 months ago        | 383.7 MB
 
+![Git_Web_Push](https://github.com/MNTLab/cm-docker/blob/roman_kalinyuk/resources/1_Git_Web_Push)
