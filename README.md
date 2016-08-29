@@ -25,6 +25,22 @@ Using base docker image ***sbeliakou/centos:6.7***
 Task Report Notes
 ---
 *All stuff must be provided in this section
+
+<h2>To run Docker you must use next commands:</h2>
+1) Using docker-compose.yml - <b>vagrant up</b>
+<br>
+2) Using dockerfiles:
+* Firstly build images
+<br><b>$docker build -t application_tomcat -f application.Dockerfile .</b>
+<br><b>$docker build -t tomcat -f tomcat.Dockerfile .</b>
+<br><b>$docker build -t nginx -f web.Dockerfile .</b>
+* Then containers:
+<br><b>$docker run -d --name application_tomcat application_tomcat</b>
+<br><b>$docker run -d -P --volumes-from application_tomcat --name tomcat tomcat</b>
+<br><b>$docker run -d -p 80:80 --link tomcat nginx</b>
+
+
+
 <br><h1>Docker images</h1>
 ![docker_imgs](resources/docker_imgs.png "docker_imgs")
 <br><br><h1>Running containers</h1>
