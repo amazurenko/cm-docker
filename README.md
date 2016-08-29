@@ -14,6 +14,7 @@ Using base docker image ***sbeliakou/centos:6.7***
     - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/application.Dockerfile))
     - Run these Images so that [http://localhost/sample](http://localhost/sample) shows ```hello world``` page
     - ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
+    - ![alt tag](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/resources/images.png)
 2. With ```docker-compose```:
     - Create ```docker-compose.yml```([docker-compose.yml](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/docker-compose.yml)) file to build containers from previos task
     - Run "environment" in daemon mode
@@ -36,4 +37,8 @@ docker images and after docker rmi -f "tomcat_container nginx_container".
 ADD resources/default.conf /etc/nginx/conf.d/default.conf block that puts new config to our nginx. After we were build our 3 files one by one. [#docker build -t nginx_container -f web.Dockerfile .][#docker build -t tomcat_container -f tomcat.Dockerfile .][#docker build -t application_container -f application.Dockerfile .][docker run -d --name application application_container][
 docker run -d -p 8080:8080 --link tomcat:tomcat --volumes-from application --name tomcat tomcat_container][docker run -d -p 80:80 --name nginx nginx_container]
 7. After we can check by curl -IL 127.0.0.1 and see that 200 OK and Hello World works! Because there is a line in a config file which redirects http://tomcat:8080/sample/ to http://127.0.0.1
+![alt tag](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/resources/curlhw.png)
+8. We can see that everything is work. And This is the time to create automatical deployment of docker files which rise up nginx, tomcat and deploy an application. We were created docker-compose.yml file and set dependencies APPLICATION build -->> TOMCAT SET -->> NGINX SET. After we can check the that the application is work.
+
+
 
