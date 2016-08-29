@@ -13,14 +13,15 @@ Vagrant.configure("2") do |config|
     usermod -a -G docker vagrant
     systemctl enable docker.service
     systemctl start docker.service
-    yum install python-pip
-    pip install docker-compose docker-py
-    mkdir /home/vagrant/docker/
-    cd /vagrant
-    cp -R resources/ /home/vagrant/docker
-    cp *.Dockerfile *.yml /home/vagrant/docker
-    cd /home/vagrant/docker/
-    docker-compose up -d
-  SHELL
+	  yum install -y python-pip.noarch
+	  pip install docker-compose docker-py
+	  mkdir /home/vagrant/containers/
+	  cd /vagrant
+	  cp -R resources/ /home/vagrant/containers/
+	  cp *.Dockerfile *.yml /home/vagrant/containers/
+	  cd /home/vagrant/containers/
+	  docker-compose up -d
+	
+SHELL
 
 end
