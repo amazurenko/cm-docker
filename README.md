@@ -23,4 +23,11 @@ Using base docker image ***sbeliakou/centos:6.7***
 
 Task Report Notes
 ---
-*All stuff must be provided in this section
+
+Application available via brovser on localhost:
+
+![image](https://github.com/MNTLab/cm-docker/blob/aliaksandr_karavai/resources/worked.png "Figure 1. Running application")
+
+Curl response from virtual mashine and created containers:
+
+![image](https://github.com/MNTLab/cm-docker/blob/aliaksandr_karavai/resources/docker_run.png "Figure 2. CURL response")
