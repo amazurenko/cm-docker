@@ -27,7 +27,7 @@ Task Report Notes
 *All stuff must be provided in this section
 
 <h2>To run Docker you must use next commands:</h2>
-<h4>Two ways:</h4><br>
+<h4>Two ways:</h4>
 1) <b>vagrant up</b> (using docker-compose.yml)
 <br>or<br>
 2) Using dockerfiles:
