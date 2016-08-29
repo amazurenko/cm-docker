@@ -1,3 +1,4 @@
+
 FROM sbeliakou/centos:6.7
 MAINTAINER yauheni likhachou (yauheni_likhachou2@epam.com)
 RUN yum install -y wget
