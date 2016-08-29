@@ -24,3 +24,7 @@ Using base docker image ***sbeliakou/centos:6.7***
 Task Report Notes
 ---
 *All stuff must be provided in this section
+check by curl
+![myimage-alt-tag](/screenshot-1.png)
+check by browser
+![myimage-alt-tag](/screenshot-2.png)
