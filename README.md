@@ -28,4 +28,12 @@ The alogithm of task implementation.
 
 1. Before authomatization we have to excercise to create all docker files by ourself (ad-hoc). And check them out, to see how it works.
 2. It was started with nginx creation and constistent implemention of web.Dockerfile. We've defined at RUN section installation of nginx by yum install. And listen 80 port at EXPOSE block. Block CMD nginx -g "daemon off;" means to turn on nginx at once. We can check the proper work of box after building and running the nginx image. By docker ps we can see that box already work and we can check that nginx is started by curl -IL 127.0.0.1:80
-3. After we have to deploy application server. Primary steps are downloading and installing wget, tar, jdk 1.7.0, tomcat 7 - and point on JAVA_HOME nad CATALINA_HOME. After we set up port 8080 at EXPOSE block, and CMD ["catalina.sh", "run"] means to run tomcat. We can check it after building and running of tomcat.Dockerfile 
+3. After we have to deploy application server. Primary steps are downloading and installing wget, tar, jdk 1.7.0, tomcat 7 - and point on JAVA_HOME nad CATALINA_HOME. After we set up port 8080 at EXPOSE block, and CMD ["catalina.sh", "run"] means to run tomcat. We can check it after building and running of tomcat.Dockerfile that tomcat is listen on 127.0.0.1:8080.
+4. For now we have to create box which deploys application to tomcat. We've to install wget and download an application and set special VOLUME to upload an application here. VOLUME /opt/tomcat/webapps/ is set.
+5. After we have to turn off all boxes which already have been work. So we were test the building and running of application and web servers. We have to remove/clean these boxes to set up and deploy an application. docker rm $(docker ps -a -q)
+docker images and after docker rmi -f "tomcat_container nginx_container".
+6. For now we have to use consistent set of actions to deploy an application. At first we updated our web.Dockerfile with 
+ADD resources/default.conf /etc/nginx/conf.d/default.conf block that puts new config to our nginx. After we were build our 3 files one by one. [#docker build -t nginx_container -f web.Dockerfile .][#docker build -t tomcat_container -f tomcat.Dockerfile .][#docker build -t application_container -f application.Dockerfile .][docker run -d --name application application_container][
+docker run -d -p 8080:8080 --link tomcat:tomcat --volumes-from application --name tomcat tomcat_container][docker run -d -p 80:80 --name nginx nginx_container]
+7. After we can check by curl -IL 127.0.0.1 and see that 200 OK and Hello World works! Because there is a line in a config file which redirects http://tomcat:8080/sample/ to http://127.0.0.1
+
