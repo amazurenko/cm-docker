@@ -25,12 +25,12 @@ Using base docker image ***sbeliakou/centos:6.7***
 Task Report Notes
 ---
 *All stuff must be provided in this section
-<br><br><b>Docker images</b>
+<br><h1>Docker images</h1>
 ![docker_imgs](resources/docker_imgs.png "docker_imgs")
-<br><br><b>Running containers</b>
+<br><br><h1>Running containers</h1>
 ![docker_ps](resources/docker_ps.png "docker_ps")
 
-<br><h1><a id="yakor">Check with curl</a></h1>
+<h1><a id="yakor">Check with curl</a></h1>
 ![curl_il](resources/curl_il.png "curl_il")
 ![curl_l.png](resources/curl_l.png "curl_l.png")
 
