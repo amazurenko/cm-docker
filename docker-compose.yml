@@ -1,0 +1,31 @@
+version: "2"
+services:
+    nginx:
+        build:
+            context: .
+            dockerfile: web.Dockerfile
+        links:
+            - "tomcat"
+        depends_on:
+            - "tomcat"
+            - "application"
+        container_name: nginx
+        expose: [ "80" ]
+        ports: [ "127.0.0.1:80:80" ]
+    tomcat:
+        build:
+            context: .
+            dockerfile: tomcat.Dockerfile
+        depends_on:
+            - "application"
+        container_name: tomcat
+        volumes_from: [ "application" ]
+        expose: [ "8080" ]
+        ports: [ "127.0.0.1:8080:8080" ]
+    application:
+        build:
+            context: .
+            dockerfile: application.Dockerfile
+        command: sleep infinity
+        container_name: application
+
