@@ -23,7 +23,10 @@ Using base docker image ***sbeliakou/centos:6.7***
 
 Task Report Notes
 
-1. Checked by ```Curl```:\n
+1. Checked by ```Curl```:
+
 ![myimage-alt-tag](/sample.png)
+
+
 ---
 *All stuff must be provided in this section
