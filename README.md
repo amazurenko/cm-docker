@@ -23,7 +23,7 @@ Using base docker image ***sbeliakou/centos:6.7***
 
 (#screens)Screenshots:
 - ```Curl```:
-![myimage-alt-tag](/curl.jpeg)
+![myimage-alt-tag](/curl.jpg)
 
 - ```Browser```:
-![myimage-alt-tag](/browser.jpeg)
+![myimage-alt-tag](/browser.jpg)
