@@ -25,6 +25,6 @@ Task Report Notes
 ---
 *All stuff must be provided in this section
 check by curl
-![myimage-alt-tag](/screenshot-1.png)
+![myimage-alt-tag](/Screenshot-1.png)
 check by browser
-![myimage-alt-tag](/screenshot-2.png)
+![myimage-alt-tag](/Screenshot-2.png)
