@@ -13,6 +13,10 @@ Vagrant.configure("2") do |config|
     usermod -a -G docker vagrant
     systemctl enable docker.service
     systemctl start docker.service
+    yum install -y python-pip.noarch
+    pip install docker-compose docker-py
+    cd /vagrant
+    docker-compose up -d		
   SHELL
 
 end
