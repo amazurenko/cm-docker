@@ -1,7 +1,8 @@
 MTN.*NIX.11 Automated Environment Configuration Management
 ---
 
-***Student***: Put_Your_Name
+***Student***: Hleb_Skuratau
+***Link*** : https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400038713235
 
 Home Task
 ---
