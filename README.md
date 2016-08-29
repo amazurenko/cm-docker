@@ -9,7 +9,7 @@ Home Task
 Using base docker image ***sbeliakou/centos:6.7***
 
 1. Wiht ```Dockerfiles```:
-    - Create Docker Image of ```nginx``` ([web.Dockerfile](/web.Dockerfile))
+    - Create Docker Image of ```nginx``` ([web.Dockerfile](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/web.Dockerfile))
     - Create Docker Image of ```Tomcat 7``` ([tomcat.Dockerfile](/tomcat.Dockerfile))
     - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](application.Dockerfile))
     - Run these Images so that [http://localhost/sample](http://localhost/sample) shows ```hello world``` page
@@ -24,4 +24,6 @@ Using base docker image ***sbeliakou/centos:6.7***
 
 Task Report Notes
 ---
-*All stuff must be provided in this section
+The alogithm of task implementation.
+
+1. Before authomatization we have to practice to create all docker files by ourself (ad-hoc). And check them out how it works.
