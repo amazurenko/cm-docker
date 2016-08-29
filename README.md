@@ -12,7 +12,7 @@ Using base docker image ***sbeliakou/centos:6.7***
     - Create Docker Image of ```nginx``` ([web.dockerfile](/web.dockerfile))
     - Create Docker Image of ```Tomcat 7``` ([app.dockerfile](/app.dockerfile))
     - Create Docker Image (Data Volume) with [```hello world```](/resources/sample.war) application for Tomcat ([hello.dockerfile](/hello.dockerfile))
-    - Run these Images so that [http://localhost:8080/sample](#anchors-in-markdown) shows ```hello world``` page
+    - Run these Images so that [http://localhost:8080/sample](./README.md#here) shows ```hello world``` page
 2. With ```docker-compose```:
     - Create ```docker-compose.yml``` file to build containers from previos task
     - Run "environment" in daemon mode
@@ -28,7 +28,7 @@ Task Report Notes
 ![myimage-alt-tag](/sample.png)
 
 - Checked by ```W3M```:
-#anchors-in-markdown
+[here](#here)
 ![myimage-alt-tag](/w3m.png)
 
 
