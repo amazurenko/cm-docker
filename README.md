@@ -1,7 +1,7 @@
-MTN.*NIX.11 Automated Environment Configuration Management
+MTN.*NIX.10 Automated Environment Configuration Management
 ---
 
-***Student***: Put_Your_Name
+***Student***: evgeniy_krupen
 
 Home Task
 ---
@@ -12,8 +12,7 @@ Using base docker image ***sbeliakou/centos:6.7***
     - Create Docker Image of ```nginx``` ([web.Dockerfile](/web.Dockerfile))
     - Create Docker Image of ```Tomcat 7``` ([tomcat.Dockerfile](/tomcat.Dockerfile))
     - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](application.Dockerfile))
-    - Run these Images so that [http://localhost/sample](http://localhost/sample) shows ```hello world``` page
-    - ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
+    - Run these Images so that [http://localhost:8080/sample](http://localhost:8080/sample) shows ```hello world``` page
 2. With ```docker-compose```:
     - Create ```docker-compose.yml``` file to build containers from previos task
     - Run "environment" in daemon mode
