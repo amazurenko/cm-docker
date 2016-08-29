@@ -1,0 +1,5 @@
+docker run -d --name datavolume tomcatdata
+
+docker run -d -P --name tomcat --volumes-from datavolume tomcat
+
+docker run -d -p 80:80 --link tomcat:tomcat nginx

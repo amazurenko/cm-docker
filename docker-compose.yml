@@ -1,32 +1,26 @@
 version: '2'
-services:
-    application:
-        build:
-            context: .
-            dockerfile: application.Dockerfile
-        command: sleep infinity
-        container_name: "application"
-    tomcat:
-        build:
-            context: .
-            dockerfile: tomcat.Dockerfile
-        command: ["catalina.sh", "run"]
-        container_name: tomcat
-        depends_on: 
-            - "application"
-        volumes_from: 
-            - "application"
-        expose:
-            - "8080"
-    nginx:
-        build:
-            context: .
-            dockerfile: web.Dockerfile
-        command: [ "nginx", "-g", "daemon off;" ]
-        container_name: "nginx"
-        depends_on: 
-            - "tomcat"
-        expose:
-            - "80"
-        ports:
-            - "80:80"
+services: 
+ tomcatdata:
+  build:
+   context: .
+   dockerfile: application.Dockerfile
+  command: sleep infinity
+ tomcat:
+  build:
+   context: .
+   dockerfile: tomcat.Dockerfile
+  command: tomcat start && tail -f /var/log/tomcat/catalina.out
+  container_name: tomcat
+  depends_on: ["tomcatdata"]
+  volumes_from: ["tomcatdata"]
+  expose: ["8080"]
+  ports: [ "8080:8080" ]
+ nginx:
+  build:
+   context: .
+   dockerfile: web.Dockerfile
+  command: ["nginx", "-g", "daemon off;"]
+  links: 
+   - tomcat
+  expose: ["80"]
+  ports: [ "80:80" ]
