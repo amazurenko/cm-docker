@@ -40,7 +40,7 @@ Task Report Notes
 <br><b>$ docker run -d -P --volumes-from application_tomcat --name tomcat tomcat</b>
 <br><b>$ docker run -d -p 80:80 --link tomcat nginx</b>
 
-<br><h1>Docker images</h1>
+<h1>Docker images</h1>
 ![docker_imgs](resources/docker_imgs.png "docker_imgs")
 <br><h1>Running containers</h1>
 ![docker_ps](resources/docker_ps.png "docker_ps")
