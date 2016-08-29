@@ -15,7 +15,7 @@ Using base docker image ***sbeliakou/centos:6.7***
     - Run these Images so that [http://localhost/sample](http://localhost/sample) shows ```hello world``` page
     - ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
 2. With ```docker-compose```:
-    - Create ```([docker-compose.yml](/docker-compose.yml))``` file to build containers from previos task
+    - Create [docker-compose.yml](/docker-compose.yml) file to build containers from previos task
     - Run "environment" in daemon mode
 3. Create own branch (epam login without @epam.com, in lowercase)
 4. Create PR with description of reported task
