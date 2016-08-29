@@ -1,0 +1,21 @@
+---
+version: '2'
+services:
+    app_data:
+        build:
+            context: .
+            dockerfile: application.Dockerfile
+    tomcat:
+        build:
+            context: .
+            dockerfile: tomcat.Dockerfile
+        volumes_from:
+            - "app_data"
+    web:
+        build:
+            context: .
+            dockerfile: web.Dockerfile
+        depends_on:
+            - "tomcat"
+        ports:
+            - "80:80"
