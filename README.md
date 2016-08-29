@@ -1,14 +1,14 @@
 MTN.*NIX.10 Automated Environment Configuration Management
 ---
 
-***Student***: evgeniy_krupen
+***Student***: [Evgeniy_Krupen]/(https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400038655484#emplTab=general)
 
 Home Task
 ---
 
 Using base docker image ***sbeliakou/centos:6.7***
 
-1. Wiht ```Dockerfiles```:
+1. With ```Dockerfiles```:
     - Create Docker Image of ```nginx``` ([web.Dockerfile](/web.Dockerfile))
     - Create Docker Image of ```Tomcat 7``` ([tomcat.Dockerfile](/tomcat.Dockerfile))
     - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](application.Dockerfile))
