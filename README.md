@@ -25,3 +25,56 @@ Using base docker image ***sbeliakou/centos:6.7***
 Task Report Notes
 ---
 *All stuff must be provided in this section
+
+mkdir docker
+cd docker/
+git init
+git clone https://github.com/MNTLab/cm-docker.git
+cd mntlab-docker/
+vi README.md 
+git checkout -b roman_kalinyuk
+git commit -a
+git push -u origin roman_kalinyuk
+
+VBoxManage --version
+sudo /sbin/rcvboxdrv setup
+VBoxManage --version
+5.0.26r108824
+
+vagrant up
+vagrant ssh
+
+cat /etc/os-release 
+NAME="CentOS Linux"
+VERSION="7 (Core)"
+
+[vagrant@epplkraw0166t2 ~]$ docker --version
+Docker version 1.11.2-cs4, build 7d4e626
+
+docker build -t tomcat -f tomcat.Dockerfile .
+[vagrant@epplkraw0166t2 ~]$ curl -IL 172.17.0.2:8080
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: text/html;charset=ISO-8859-1
+Transfer-Encoding: chunked
+Date: Mon, 29 Aug 2016 15:12:18 GMT
+
+
+docker build -t nginx -f web.Dockerfile .
+[vagrant@epplkraw0166t2 ~]$ docker exec -i -t 4ad24d4b6327b96b1347e9e5f40514044b01cb7335e8e9349bc68b920079b730 bash
+[root@4ad24d4b6327 /]# curl -IL 172.17.0.3:80
+HTTP/1.1 200 OK
+Server: nginx/1.0.15
+Date: Mon, 29 Aug 2016 15:46:55 GMT
+
+docker build -t application -f application.Dockerfile .
+
+
+[vagrant@epplkraw0166t2 ~]$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
+application         latest              3449020e55be        About a minute ago   467.5 MB
+nginx               latest              5c4cd3974539        30 minutes ago       603.8 MB
+tomcat              latest              af9a430de56b        About an hour ago    775.7 MB
+sbeliakou/centos    6.7                 600797452381        3 months ago         383.7 MB
+
+
