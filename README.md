@@ -27,8 +27,9 @@ Task Report Notes
 *All stuff must be provided in this section
 
 <h2>To run Docker you must use next commands:</h2>
-1) Using docker-compose.yml - <b>vagrant up</b>
-<br>
+<h4>Two ways:</h4><br>
+1) <b>vagrant up</b> (using docker-compose.yml)
+<br>or<br>
 2) Using dockerfiles:
 * Firstly build images
 <br><b>$docker build -t application_tomcat -f application.Dockerfile .</b>
