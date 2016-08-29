@@ -24,7 +24,7 @@ Using base docker image ***sbeliakou/centos:6.7***
 Task Report Notes
 ---
 
-Application available via brovser on localhost:
+Application available via brovser on localhost - port on host mashine:8084 and forwarded in Vagrantfile (vagrant started from non privileged user):
 
 ![image](https://github.com/MNTLab/cm-docker/blob/aliaksandr_karavai/resources/worked.png "Figure 1. Running application")
 
