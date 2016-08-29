@@ -20,8 +20,6 @@ services:
             - "application"
         container_name: tomcat
         volumes_from: [ "application" ]
-        expose: [ "8080" ]
-        ports: [ "127.0.0.1:8080:8080" ]
     application:
         build:
             context: .
