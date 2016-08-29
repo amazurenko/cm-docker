@@ -12,7 +12,7 @@ Using base docker image ***sbeliakou/centos:6.7***
     - Create Docker Image of ```nginx``` ([web.Dockerfile](/web.Dockerfile))
     - Create Docker Image of ```Tomcat 7``` ([tomcat.Dockerfile](/tomcat.Dockerfile))
     - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](application.Dockerfile))
-    - Run these Images so that [http://localhost/sample](http://localhost/sample) shows ```hello world``` page
+    - Run these Images so that [http://localhost/sample](#yakor) shows ```hello world``` page
     - ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
 2. With ```docker-compose```:
     - Create [docker-compose.yml](/docker-compose.yml) file to build containers from previos task
@@ -25,3 +25,17 @@ Using base docker image ***sbeliakou/centos:6.7***
 Task Report Notes
 ---
 *All stuff must be provided in this section
+Docker images and running containers
+![docker_imgs](resources/docker_imgs.png "docker_imgs")
+![docker_ps](resources/docker_ps.png "docker_ps")
+<a id="yakor"></a>
+Check with curl
+![curl_il](resources/curl_il.png "curl_il")
+![curl_l.png](resources/curl_l.png "curl_l.png")
+
+
+
+
+
+
+
