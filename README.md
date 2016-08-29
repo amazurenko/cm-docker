@@ -11,7 +11,7 @@ Using base docker image ***sbeliakou/centos:6.7***
 1. With ```Dockerfiles```:
     - Create Docker Image of ```nginx``` ([web.dockerfile](/web.dockerfile))
     - Create Docker Image of ```Tomcat 7``` ([app.dockerfile](/app.dockerfile))
-    - Create Docker Image (Data Volume) with [```hello world```](/resources/sample.war) application for Tomcat ([hello.dockerfile](/hello.dockerfile))
+    - Create Docker Image (Data Volume) with [```hello world```](/resources) application for Tomcat ([hello.dockerfile](/hello.dockerfile))
     - Run these Images so that [http://localhost:8080/sample](#screens) shows ```hello world``` page
 2. With ```docker-compose```:
     - Create [```docker-compose.yml```](/docker-compose.yml) file to build containers from previos task
@@ -21,9 +21,10 @@ Using base docker image ***sbeliakou/centos:6.7***
 5. All needed changes (additional configuration/installations) on "Host" must be added into [Vagrantfile](/Vagrantfile)
 6. All needed resources (if they are) must be placed into [```/resources```](/resources) folder
 
-(#screens)Screenshots:
+<a id="screens"></a>
+[Screenshots:](#screens)
 - ```Curl```:
-![myimage-alt-tag](/curl.jpeg)
+![Alt text](/resources/curl.jpg "scr1")
 
 - ```Browser```:
-![myimage-alt-tag](/browser.jpeg)
+![Alt text](/resources/browser.jpg "scr2")
