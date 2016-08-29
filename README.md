@@ -1,7 +1,7 @@
 MTN.*NIX.11 Automated Environment Configuration Management
 ---
 
-***Student***: Uladzislau Charches
+***Student***: [Uladzislau Charches](https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400038705754#emplTab=general)
 
 Home Task
 ---
