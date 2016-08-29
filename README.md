@@ -1,7 +1,7 @@
 MTN.*NIX.10 Automated Environment Configuration Management
 ---
 
-***Student***: Name
+***Student***: ```Aliaksandr Karavai``` ([Aliaksandr Karavai](https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400038663763#emplTab=general))
 
 Home Task
 ---
