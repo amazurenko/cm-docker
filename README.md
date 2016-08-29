@@ -23,9 +23,13 @@ Using base docker image ***sbeliakou/centos:6.7***
 
 Task Report Notes
 
-1. Checked by ```Curl```:
+- Checked by ```Curl```:
 
 ![myimage-alt-tag](/sample.png)
+
+- Checked by ```W3M```:
+
+![myimage-alt-tag](/w3m.png)
 
 
 ---
