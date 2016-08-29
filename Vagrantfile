@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
     systemctl enable docker.service
     systemctl start docker.service
     mkdir /home/vagrant/docker && cp -R /vagrant/resources/ /home/vagrant/docker/
-    cp /vagrant/*.Dockerfile *.yml /home/vagrant/docker/
+    cd /vagrant/ && cp *.Dockerfile *.yml /home/vagrant/docker/
     cd /home/vagrant/docker/ 
     docker-compose up -d
     curl -IL localhost:80/sample/
