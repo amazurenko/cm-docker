@@ -1,7 +1,7 @@
 MTN.*NIX.11 Automated Environment Configuration Management
 ---
 
-***Student***: Yury Muski
+***Student***: [Yury Muski](https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400038655529#emplTab=general)
 
 Home Task
 ---
