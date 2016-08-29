@@ -20,6 +20,3 @@ services:
       depends_on: [ "tomcat" ]
       expose: [ "80" ]
       ports: [ "80:80" ]
-
-
-
