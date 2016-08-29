@@ -9,16 +9,16 @@ Home Task
 Using base docker image ***sbeliakou/centos:6.7***
 
 1. Wiht ```Dockerfiles```:
-    - Create Docker Image of ```nginx``` ([web.Dockerfile](/web.Dockerfile))
-    - Create Docker Image of ```Tomcat 7``` ([tomcat.Dockerfile](/tomcat.Dockerfile))
-    - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](application.Dockerfile))
+    - Created Docker Image of ```nginx``` ([web.Dockerfile](/web.Dockerfile))
+    - Created Docker Image of ```Tomcat 7``` ([tomcat.Dockerfile](/tomcat.Dockerfile))
+    - Created Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](application.Dockerfile))
     - Run these Images so that [http://localhost/sample](/resources/Screenshot-2.png) shows ```hello world``` page
     - ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
 2. With ```docker-compose```:
-    - Create ```docker-compose.yml``` file to build containers from previos task
+    - Created ```docker-compose.yml``` file to build containers from previos task
     - Run "environment" in daemon mode
-3. Create own branch (epam login without @epam.com, in lowercase)
-4. Create PR with description of reported task
+3. Created own branch (epam login without @epam.com, in lowercase)
+4. Created PR with description of reported task
 5. All needed changes (additional configuration/installations) on "Host" must be added into [Vagrantfile](/Vagrantfile)
 6. All needed resources (if they are) must be placed into ```/resources``` folder
 
