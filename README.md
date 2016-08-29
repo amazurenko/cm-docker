@@ -1,8 +1,7 @@
 MTN.*NIX.10 Automated Environment Configuration Management
 ---
 
-***Student***: Dzmitry_Pasiukevich
-UPSA: https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400038670377#emplTab=general
+***Student***: [Dzmitry_Pasiukevich] (https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400038670377#emplTab=general)
 
 Home Task
 ---
