@@ -1,10 +1,6 @@
 FROM sbeliakou/centos:6.7
-MAINTAINER evgeniy_krupen "evgeniy_krupen@epam.com"
+MAINTAINER yauheni likhachou (yauheni_likhachou2@epam.com)
 RUN yum install -y nginx
-ADD resources/default.conf /etc/nginx/conf.d/default.conf
+ADD resources/def.conf /etc/nginx/conf.d/
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
-
-
-
-
+CMD nginx -g "daemon off;"

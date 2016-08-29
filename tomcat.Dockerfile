@@ -1,5 +1,5 @@
 FROM sbeliakou/centos:6.7
-MAINTAINER Evgeniy_Krupen (evgeniy_krupen@epam.com)
+MAINTAINER yauheni likhachou (yauheni_likhachou2@epam.com)
 RUN yum install -y wget tar
 ENV JAVA_HOME /opt/java
 ENV CATALINA_HOME /opt/tomcat
@@ -17,4 +17,3 @@ RUN chmod +x ${CATALINA_HOME}/bin/*sh
 WORKDIR /opt/tomcat
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
-

@@ -1,14 +1,14 @@
-MTN.*NIX.10 Automated Environment Configuration Management
+MTN.*NIX.11 Automated Environment Configuration Management
 ---
 
-***Student***: [Evgeniy_Krupen](https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400038655484#emplTab=general)
+***Student***: yauheni likhachou
 
 Home Task
 ---
 
 Using base docker image ***sbeliakou/centos:6.7***
 
-1. With ```Dockerfiles```:
+1. Wiht ```Dockerfiles```:
     - Create Docker Image of ```nginx``` ([web.Dockerfile](/web.Dockerfile))
     - Create Docker Image of ```Tomcat 7``` ([tomcat.Dockerfile](/tomcat.Dockerfile))
     - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](application.Dockerfile))
@@ -22,15 +22,5 @@ Using base docker image ***sbeliakou/centos:6.7***
 6. All needed resources (if they are) must be placed into ```/resources``` folder
 
 Task Report Notes
-
-- Checked by ```Curl```:
-
-![myimage-alt-tag](/sample.png)
-
-- Checked by ```W3M```:
-
-![myimage-alt-tag](/w3m.png)
-
-
 ---
 *All stuff must be provided in this section
