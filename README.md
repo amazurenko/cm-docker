@@ -3,7 +3,7 @@ MTN.*NIX.11 Automated Environment Configuration Management
 
 ***Student***: yauheni likhachou
 
-Home Task
+Home Task Docker
 ---
 
 Using base docker image ***sbeliakou/centos:6.7***
