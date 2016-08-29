@@ -24,7 +24,7 @@ Using base docker image ***sbeliakou/centos:6.7***
 <a id="screens"></a>
 [Screenshots:](#screens)
 - ```Curl```:
-![Alt text](/resources/curl.png "scr1")
+![Alt text](resources/curl.png "scr1")
 
 - ```Browser```:
-![Alt text](/resources/browser.png "scr2")
+![Alt text](resources/browser.png "scr2")
