@@ -15,7 +15,6 @@ Using base docker image ***sbeliakou/centos:6.7***
     - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](application.Dockerfile))
 
 **all related information with my actions is mirrored in configs**
-
     - Run these Images so that [http://localhost/sample](/resources/Screenshot-2.png) shows ```hello world``` page
     - ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
 
@@ -39,7 +38,7 @@ pip install docker-compose docker-py
     - Create ```docker-compose.yml``` file to build containers from previos task
     - Run "environment" in daemon mode
     
-([screen with start](application.Dockerfile))
+([screen with start](/resources/Screenshot.png))
 
 3. Create own branch (epam login without @epam.com, in lowercase)
 
