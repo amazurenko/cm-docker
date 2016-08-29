@@ -25,3 +25,5 @@ Using base docker image ***sbeliakou/centos:6.7***
 Task Report Notes
 ---
 *All stuff must be provided in this section
+
+![alt text](https://github.com/MNTLab/cm-docker/blob/anton_tkachenka/resources/3.png "http://localhost/sample")
