@@ -1,7 +1,7 @@
 MTN.*NIX.10 Automated Environment Configuration Management
 ---
 
-***Student***: [Evgeniy_Krupen](https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400038655484#emplTab=general)
+***Student***: [Uladzimir_Semiankou](https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400038669535#emplTab=general)
 
 Home Task
 ---
@@ -9,28 +9,21 @@ Home Task
 Using base docker image ***sbeliakou/centos:6.7***
 
 1. With ```Dockerfiles```:
-    - Create Docker Image of ```nginx``` ([web.Dockerfile](/web.Dockerfile))
-    - Create Docker Image of ```Tomcat 7``` ([tomcat.Dockerfile](/tomcat.Dockerfile))
-    - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](application.Dockerfile))
-    - Run these Images so that [http://localhost:8080/sample](http://localhost:8080/sample) shows ```hello world``` page
+    - Create Docker Image of ```nginx``` ([web.dockerfile](/web.dockerfile))
+    - Create Docker Image of ```Tomcat 7``` ([app.dockerfile](/app.dockerfile))
+    - Create Docker Image (Data Volume) with [```hello world```](/resources/sample.war) application for Tomcat ([hello.dockerfile](/hello.dockerfile))
+    - Run these Images so that [http://localhost:8080/sample](#screens) shows ```hello world``` page
 2. With ```docker-compose```:
-    - Create ```docker-compose.yml``` file to build containers from previos task
+    - Create [```docker-compose.yml```](/docker-compose.yml) file to build containers from previos task
     - Run "environment" in daemon mode
 3. Create own branch (epam login without @epam.com, in lowercase)
 4. Create PR with description of reported task
 5. All needed changes (additional configuration/installations) on "Host" must be added into [Vagrantfile](/Vagrantfile)
-6. All needed resources (if they are) must be placed into ```/resources``` folder
+6. All needed resources (if they are) must be placed into [```/resources```](/resources) folder
 
-Task Report Notes
+(#screens)Screenshots:
+- ```Curl```:
+![myimage-alt-tag](/curl.jpeg)
 
-- Checked by ```Curl```:
-
-![myimage-alt-tag](/sample.png)
-
-- Checked by ```W3M```:
-
-![myimage-alt-tag](/w3m.png)
-
-
----
-*All stuff must be provided in this section
+- ```Browser```:
+![myimage-alt-tag](/browser.jpeg)
