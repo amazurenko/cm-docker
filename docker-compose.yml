@@ -1,0 +1,23 @@
+  version: '2'
+  services:
+    data:
+      build:
+        context: .
+        dockerfile: application.Dockerfile
+      command: sleep infinity
+    tomcat:
+      build:
+        context: .
+        dockerfile: tomcat.Dockerfile
+      command: ["catalina.sh", "run"]
+      volumes_from: [ "data" ]
+      depends_on: [ "data" ]
+    nginx:
+      build:
+        context: .
+        dockerfile: web.Dockerfile
+      command: nginx -g "daemon off;"
+      depends_on: [ "tomcat" ]
+      expose: [ "80" ]
+      external_links: [ "tomcat:tomcat" ]
+      ports: [ "127.0.0.1:80:80" ]
