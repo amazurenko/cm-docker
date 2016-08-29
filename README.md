@@ -29,6 +29,7 @@ Vagrantfile includes pip and docker-compose installation.
 docker compose runs through 'docker-compose up -d' command.
 Only nginx container has exposed 80 port.
 
-- ```Curl from vagrant VM```:
 <a id="screens"></a>
+- ```Curl from vagrant VM```:
+
 ![Alt text](resources/curl-screen.JPG "scr1")
