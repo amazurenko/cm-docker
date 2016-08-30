@@ -4,12 +4,14 @@ services:
         build:
             context: .
             dockerfile: application.Dockerfile
+        restart: always
     tomcat:
         build:
             context: .
             dockerfile: tomcat.Dockerfile
         volumes_from: [ "tomcat_data" ]
         depends_on: [ "tomcat_data" ]
+        restart: always
     nginx:
         build:
             context: .
@@ -17,3 +19,4 @@ services:
         depends_on: [ "tomcat" ]
         external_links: [ "tomcat:tomcat" ]
         ports: [ "80:80" ]
+        restart: always
