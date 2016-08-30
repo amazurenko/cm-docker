@@ -12,7 +12,7 @@ Using base docker image ***sbeliakou/centos:6.7***
     - Create Docker Image of ```nginx``` ([web.Dockerfile](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/web.Dockerfile))
     - Create Docker Image of ```Tomcat 7``` ([tomcat.Dockerfile](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/tomcat.Dockerfile))
     - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/application.Dockerfile))
-    - Run these Images so that [http://localhost/sample](http://localhost/sample) shows ```hello world``` page
+    - Run these Images so that [http://localhost/](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/resources/helloworld.png) shows ```hello world``` page
     - ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
     - ![alt tag](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/resources/images.png)
 2. With ```docker-compose```:
