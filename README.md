@@ -16,10 +16,11 @@ Using base docker image ***sbeliakou/centos:6.7***
 
     **all related information with my actions is mirrored in configs**
 
-    - Run these Images so that [http://localhost/sample](/resources/Screenshot-2.png) shows ```hello world``` page
-    - ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
+   - Run these Images so that [http://localhost/sample](/resources/Screenshot-3.png) 
+   - [curl image] (/resources/Screenshot-2.png)  shows ```hello world``` page
+   - ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
 
-**Start containers**
+    **Start containers**
 
 docker build -t application -f application.Dockerfile .
 docker run -d --name application application
