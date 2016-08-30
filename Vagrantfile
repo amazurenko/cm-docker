@@ -18,6 +18,7 @@ Vagrant.configure("2") do |config|
     cd /vagrant/ && cp *.Dockerfile *.yml /home/vagrant/docker/
     cd /home/vagrant/docker/ 
     docker-compose up -d
+    sleep 10
     curl -IL http://localhost/sample/
     
   SHELL
