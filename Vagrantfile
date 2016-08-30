@@ -22,8 +22,6 @@ docker1.vm.provision "shell", inline: <<-SHELL
     systemctl start docker.service
     yum install -y python-pip.noarch
     pip install docker-compose docker-py
-    cd /vagrant
-    docker-compose up -d
   SHELL
 end
 end
