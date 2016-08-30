@@ -22,6 +22,7 @@ Using base docker image ***sbeliakou/centos:6.7***
 6. All needed resources (if they are) must be placed into ```/resources``` folder
 
 ## Task Report Notes
+Screenshot-5.png
 
 ---
 *All stuff must be provided in this section
