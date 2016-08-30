@@ -8,7 +8,7 @@ Home Task
 
 Using base docker image ***sbeliakou/centos:6.7***
 
-1. Wiht ```Dockerfiles```:
+1. With ```Dockerfiles```:
     - Create Docker Image of ```nginx``` ([web.Dockerfile](/web.Dockerfile))
     - Create Docker Image of ```Tomcat 7``` ([tomcat.Dockerfile](/tomcat.Dockerfile))
     - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](application.Dockerfile))
@@ -25,8 +25,10 @@ Using base docker image ***sbeliakou/centos:6.7***
 Task Report Notes
 ---
 Vagrantfile includes pip and docker-compose installation.
+Container web-content is accesable from host browser by address localhost:8080/sample
 
 docker compose runs through 'docker-compose up -d' command.
+container are started with 'restart always' parameter.
 Only nginx container has exposed 80 port.
 
 <a id="screens"></a>
