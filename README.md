@@ -55,7 +55,7 @@ pip install docker-compose docker-py
     
 5. All needed changes (additional configuration/installations) on "Host" must be added into [Vagrantfile](/Vagrantfile)
 
-    **according with your instructure, Vagrant file was left in the original state**
+    **despite your instructure, Vagrant file was uploaded**
     
 6. All needed resources (if they are) must be placed into ```/resources``` folder
 
