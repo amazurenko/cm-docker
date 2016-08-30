@@ -29,9 +29,7 @@ docker run -d -p 127.0.0.1:80:80 --link tomcat:tomcat --name nginx web
 
 
 2. With ```docker-compose```:
-
-**installing**
-
+   **installing**
 yum install -y python-pip
 pip install docker-compose docker-py
 
@@ -41,17 +39,11 @@ pip install docker-compose docker-py
 ([screen with start](/resources/Screenshot.png))
 
 3. Create own branch (epam login without @epam.com, in lowercase)
-
-**created**
-
+    **created**
 4. Create PR with description of reported task
-
-**created**
-
+    **created**
 5. All needed changes (additional configuration/installations) on "Host" must be added into [Vagrantfile](/Vagrantfile)
-
-**according with your instructure, Vagrant file was left in the original state**
-
+    **according with your instructure, Vagrant file was left in the original state**
 6. All needed resources (if they are) must be placed into ```/resources``` folder
 
 Task Report Notes
