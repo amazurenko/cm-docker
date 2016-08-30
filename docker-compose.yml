@@ -4,26 +4,21 @@ services:
       build:
           context: .
           dockerfile: application.Dockerfile
-      command: sleep infinity
       container_name: appdata
    tomcat:
       build:
           context: .
           dockerfile: tomcat.Dockerfile
-      command: ["catalina.sh", "run"]
       container_name: tomcat
       depends_on: [ "appdata" ]
       volumes_from: [ "appdata" ]
-      expose: [ "8080" ]
       ports: [ "8080:8080" ]
    nginx:
       build:
           context: .
           dockerfile: web.Dockerfile
-      command: ["nginx", "-g", "daemon off;"]
       container_name: nginx
       depends_on: [ "tomcat" ]
-      expose: [ "80" ]
       ports: [ "80:80" ]
       links: [ "tomcat:tomcat" ]
       
