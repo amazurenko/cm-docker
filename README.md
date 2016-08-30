@@ -1,6 +1,6 @@
-MTN.*NIX.10 Automated Environment Configuration Management
+<a name="anch_2"></a>MTN.*NIX.10 Automated Environment Configuration Management
 ---
-<a name="anch_2"></a>
+
 
 ***Student***: ```Aliaksandr Karavai``` ([Aliaksandr Karavai](https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400038663763#emplTab=general))
 
