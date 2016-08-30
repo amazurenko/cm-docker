@@ -69,7 +69,7 @@ Task Report Notes
 
 ![Alt text](/resources/Screenshot-3.png "scr1")
 
-<a id="screen2"></a
+<a id="screen2"></a>
 
 *curl*
 
