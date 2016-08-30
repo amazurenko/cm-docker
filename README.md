@@ -20,7 +20,7 @@ Using base docker image ***sbeliakou/centos:6.7***
     **all related information with my actions is mirrored in configs**
 
    - Run these Images so that [http://localhost/sample](#screen) 
-   - [curl image] (/resources/Screenshot-2.png)  shows ```hello world``` page
+   - [curl image] (#screen)  shows ```hello world``` page
    - ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
 
     **Start containers**
@@ -68,3 +68,7 @@ Task Report Notes
 *brouser*
 
 ![Alt text](/resources/Screenshot-3.png "scr1")
+
+*curl*
+
+![Alt text](/resources/Screenshot-2.png  "scr1")
