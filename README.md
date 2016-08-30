@@ -23,6 +23,7 @@ Using base docker image ***sbeliakou/centos:6.7***
 
 ## Task Report Notes
 ![](/resources/Screenshot-5.png)
+![](/resources/Screenshot-4.png)
 
 ---
 *All stuff must be provided in this section
