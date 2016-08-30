@@ -43,7 +43,7 @@ pip install docker-compose docker-py
     - Create ```docker-compose.yml``` file to build containers from previos task
     - Run "environment" in daemon mode
     
-([screen with start](/resources/Screenshot.png))
+(![screen with start](/resources/Screenshot.png))
 
 3. Create own branch (epam login without @epam.com, in lowercase)
 
