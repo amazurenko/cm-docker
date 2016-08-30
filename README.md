@@ -15,6 +15,7 @@ Using base docker image ***sbeliakou/centos:6.7***
     - Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](application.Dockerfile))
 
 **all related information with my actions is mirrored in configs**
+
     - Run these Images so that [http://localhost/sample](/resources/Screenshot-2.png) shows ```hello world``` page
     - ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
 
@@ -29,7 +30,9 @@ docker run -d -p 127.0.0.1:80:80 --link tomcat:tomcat --name nginx web
 
 
 2. With ```docker-compose```:
+
    **installing**
+
 yum install -y python-pip
 pip install docker-compose docker-py
 
@@ -39,11 +42,17 @@ pip install docker-compose docker-py
 ([screen with start](/resources/Screenshot.png))
 
 3. Create own branch (epam login without @epam.com, in lowercase)
+
     **created**
+    
 4. Create PR with description of reported task
+
     **created**
+    
 5. All needed changes (additional configuration/installations) on "Host" must be added into [Vagrantfile](/Vagrantfile)
+
     **according with your instructure, Vagrant file was left in the original state**
+    
 6. All needed resources (if they are) must be placed into ```/resources``` folder
 
 Task Report Notes
