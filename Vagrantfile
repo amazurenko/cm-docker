@@ -4,7 +4,6 @@
 Vagrant.configure("2") do |config|
   config.vm.synced_folder "/var/mnt-lab/cm-docker", "/mnt/vagrshare",owner: "vagrant",group: "vagrant", create: true
   config.vm.box = "sbeliakou/centos-7.2-x86_64"
-  config.vm.network "forwarded_port", guest: 80, host: 80
 
   config.vm.provision "shell", inline: <<-SHELL
     rpm --import "https://sks-keyservers.net/pks/lookup?op=get&search=0xee6d536cf7dc86e2d7d56f59a178ac6c6238f52e"
