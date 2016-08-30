@@ -1,6 +1,6 @@
 FROM sbeliakou/centos:6.7
 ENV CATALINA_HOME /opt/tomcat
-ENV PATH $PATH:$CATALINA_HOME/bin:$CATALINA_HOME/scripts
+ENV PATH $PATH:$CATALINA_HOME/bin
 RUN yum install -y wget tar java-1.8.0-openjdk.x86_64
 RUN wget http://ftp.byfly.by/pub/apache.org/tomcat/tomcat-7/v7.0.70/bin/apache-tomcat-7.0.70.tar.gz && \
 tar xvf apache-tomcat-7.0.70.tar.gz && \
