@@ -31,5 +31,6 @@ Only nginx container has exposed 80 port.
 
 <a id="screens"></a>
 - ```Curl from vagrant VM```:
-
 ![Alt text](resources/curl-screen.JPG "scr1")
+- ```Browser access from host system```:
+![Alt text](resources/screen-host.jpg "scr2")
