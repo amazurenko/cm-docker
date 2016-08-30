@@ -39,6 +39,6 @@ docker run -d -p 8080:8080 --link tomcat:tomcat --volumes-from application --nam
 7. After we can check by curl -IL 127.0.0.1 and see that 200 OK and Hello World works! Because there is a line in a config file which redirects http://tomcat:8080/sample/ to http://127.0.0.1
 ![alt tag](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/resources/curlhw.png)
 8. We can see that everything is work. And This is the time to create automatical deployment of docker files which rise up nginx, tomcat and deploy an application. We were created docker-compose.yml file and set dependencies APPLICATION build -->> TOMCAT SET -->> NGINX SET. After we can check the that the application is work.
-
-
+9. After we've configured commutation between vagrant and host and check our tomcat at 192.168.33.2 
+![alt tag](https://github.com/MNTLab/cm-docker/blob/yaraslau_karotkin/resources/helloworld.png)
 
