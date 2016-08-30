@@ -21,7 +21,7 @@ Using base docker image ***sbeliakou/centos:6.7***
 5. All needed changes (additional configuration/installations) on "Host" must be added into [Vagrantfile](/Vagrantfile)
 6. All needed resources (if they are) must be placed into ```/resources``` folder
 
-## Task Report Notes
+## Task Report Notes 
 ![](/resources/Screenshot-5.png)
 ![](/resources/Screenshot-4.png)
 
