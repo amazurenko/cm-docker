@@ -28,7 +28,7 @@ Vagrantfile includes pip and docker-compose installation.
 Container web-content is accesable from host browser by address localhost:8080/sample
 
 docker compose runs through 'docker-compose up -d' command.
-container are started with 'restart always' parameter.
+Containers are started with 'restart always' parameter.
 Only nginx container has exposed 80 port.
 
 <a id="screens"></a>
