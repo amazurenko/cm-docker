@@ -5,7 +5,5 @@ RUN yum install -y nginx
 
 ADD resources/nginx.conf /etc/nginx
 
-#ENTRYPOINT ["/bin/bash"]
 ENTRYPOINT ["nginx"]
-CMD ["-g", "daemon off;"]
 
